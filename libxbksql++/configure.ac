@@ -1,0 +1,47 @@
+AC_PREREQ(2.53)
+AC_INIT([libxbksql++],[1.0],[http://www.x-itec.net/libxbksql++])
+AM_CONFIG_HEADER(xbksql++/config.h)
+
+AC_CONFIG_HEADERS
+
+AC_CANONICAL_TARGET([])
+AM_INIT_AUTOMAKE(AC_PACKAGE_NAME, AC_PACKAGE_VERSION)
+AM_MAINTAINER_MODE
+AC_PROG_CXX
+AC_ISC_POSIX
+AC_HEADER_STDC
+AC_CHECK_HEADERS(unistd.h, AC_DEFINE(HAVE_UNISTD_H))
+AM_PROG_LIBTOOL
+
+MEINELIB_MAJOR_VERSION=1
+MEINELIB_MINOR_VERSION=0
+MEINELIB_MICRO_VERSION=0
+
+MEINELIB_VERSION=$MEINELIB_MAJOR_VERSION.$MEINELIB_MINOR_VERSION.$MEINELIB_MICRO_VERSION
+
+VERSION=$MEINELIB_VERSION
+PACKAGE=libxbksql++
+
+AC_SUBST(MEINELIB_MAJOR_VERSION)
+AC_SUBST(MEINELIB_MINOR_VERSION)
+AC_SUBST(MEINELIB_MICRO_VERSION)
+AC_SUBST(VERSION)
+AC_SUBST(PACKAGE)
+
+
+AC_MSG_CHECKING([whether debugging is requested (--enable-debug=yes)])
+AC_ARG_ENABLE(debug,
+    [  --enable-debug        enable debugging facility],
+    use_debug=$enableval, use_debug=no)
+    AC_MSG_RESULT($use_debug)
+if test "$use_debug" = yes ; then
+    AC_DEFINE(DEBUGME,1,[Debugging und Logging aktivieren])
+    CXXFLAGS="-ggdb3 -O0 -Wall"
+fi
+
+AC_SUBST(use_debug)
+
+
+
+AC_CONFIG_FILES([Makefile xbksql++/Makefile])
+AC_OUTPUT

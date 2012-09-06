@@ -1,0 +1,8 @@
+
+aclocal
+autoheader
+autoconf
+automake
+./configure
+make clean
+make

@@ -1,0 +1,7 @@
+libxbkstringsep TODO
+===============================================================================
+
+- there is currently nothing planned except maintenance
+  because this library has been written to parse
+  only small (<1024 bytes) text segments for separation.
+  Of course there is no 1024 bytes limitation.

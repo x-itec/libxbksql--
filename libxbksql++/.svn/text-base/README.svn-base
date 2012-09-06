@@ -1,0 +1,41 @@
+libxbkstringsep README ($Date: 2003/10/04 15:33:44 $)
+===============================================================================
+
+ OVERVIEW
+
+  Description
+  -----------
+
+  This library provides an easy way to split a string by a given separator.
+  
+
+  Features
+  --------
+
+  The library provides the following features:
+
+   o  Free software (GNU Library General Public License)
+   o  Should work on every ANSI C conforming platform
+
+  Disclaimer
+  ----------
+
+  Please read the file COPYING before using this library. 
+
+  Installation
+  ------------
+
+  For installing please read the document INSTALL.
+
+  New Versions
+  ------------
+
+  Information on how to retrieve new versions can be found on
+  <URL:http://www.x-itec.net/libxbkstringsep++>.
+
+  Credits
+  -------
+
+  Please read the file AUTHORS.
+
+

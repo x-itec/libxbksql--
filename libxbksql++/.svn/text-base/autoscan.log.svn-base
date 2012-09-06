@@ -1,0 +1,21 @@
+autoscan: warning: missing AC_CHECK_HEADERS([sys/time.h]) wanted by: 
+	xbksql++/xbkdbq.cpp:3
+	xbksql++/xbkdbq.h:3
+	xbksql++/qa/xbkqs.c:7
+autoscan: warning: missing AC_C_INLINE wanted by: 
+	xbksql++/xbkdbq.cpp:110
+	xbksql++/xbkdbq.cpp:121
+	xbksql++/xbkdbq.cpp:132
+	xbksql++/xbkdbq.cpp:141
+	xbksql++/xbkdbq.cpp:149
+	xbksql++/xbkdbq.cpp:157
+	xbksql++/xbkdbq.cpp:164
+	xbksql++/xbkdbq.cpp:180
+	xbksql++/xbkdbq.cpp:189
+	xbksql++/xbkdbq.cpp:197
+	xbksql++/xbkdbq.cpp:204
+	xbksql++/xbkdbq.cpp:244
+	xbksql++/xbkdbq.cpp:251
+	xbksql++/xbkdbq.cpp:277
+autoscan: warning: missing AC_FUNC_GETLOADAVG wanted by: 
+	xbksql++/qa/xbkqs.c:100
